@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Code Reviewer</title>
+</head>
+
+<body>
+
+    <h1>🤖 AI Code Reviewer</h1>
+
+    <form action="/review" method="post">
+        <textarea name="code" rows="10" cols="60" placeholder="Paste your code here..." required></textarea><br><br>
+
+        <button type="submit">Review Code</button>
+    </form>
+    {% if review %}
+    <div style="margin-top:20px;">
+        <h3>🧠 Review:</h3>
+        <pre>{{ review }}</pre>
+    </div>
+
+
+</body>
+
+</html>
